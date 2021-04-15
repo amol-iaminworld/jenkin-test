@@ -1,5 +1,6 @@
 package com.iamin.jenkin.controller;
 
+import com.iamin.commons.dto.usermanagement.UserInfoDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping
     public String hareKrishna(){
-        return "Radhe Radhe";
+        UserInfoDTO userInfoDTO = new UserInfoDTO();
+        userInfoDTO.setEmail("amol@abcd.com");
+        return "Radhe Radhe, : "+userInfoDTO.getEmail();
     }
 }
