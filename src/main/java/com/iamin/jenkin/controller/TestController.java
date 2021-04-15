@@ -10,6 +10,7 @@ public class TestController {
     public String hareKrishna(){
         UserInfoDTO userInfoDTO = new UserInfoDTO();
         userInfoDTO.setEmail("amol@abcd.com");
+        //sample comment
         return "Radhe Radhe, : "+userInfoDTO.getEmail();
     }
 }
