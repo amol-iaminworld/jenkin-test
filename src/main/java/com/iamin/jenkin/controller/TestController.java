@@ -11,6 +11,6 @@ public class TestController {
         UserInfoDTO userInfoDTO = new UserInfoDTO();
         userInfoDTO.setEmail("amol@abcd.com");
         //sample comment
-        return "Hare Krishna : "+userInfoDTO.getEmail();
+        return "Hare Krishna, !!! : "+userInfoDTO.getEmail();
     }
 }
